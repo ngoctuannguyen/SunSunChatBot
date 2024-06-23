@@ -2,8 +2,9 @@
 
 <h2>Project Description</h2>
 
-<p id="description">This project
+<p id="description">This project is for
 AI R&amp;D Challenge for Sun* Summer Internship</p>
+<p> Author: Nguyen Tuan Ngoc, Sophomore from VNU-UET at this time </p>
 
 <h2>🚀 Demo</h2>
 
@@ -36,7 +37,8 @@ Conda Command Prompt
 ```
 conda create -n agent python=3.10 -y 
 conda activate agent
-#using pip to install all package from requirements.txt file pip install -r requirements.txt
+#using pip to install all package from requirements.txt file 
+pip install -r requirements.txt
 ```
   
 <h2>💻 Built with</h2>

@@ -1,0 +1,11 @@
+.env
+
+Assets/
+
+Tools/Retrieval.ipynb
+
+__pycache__/
+
+agent
+
+src

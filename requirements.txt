@@ -1,0 +1,7 @@
+langchain
+langchain-openai
+torch
+fastapi
+pyvi
+langchain_community
+zenguard
