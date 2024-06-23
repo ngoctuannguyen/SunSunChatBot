@@ -1,28 +1,26 @@
-<h1 align="center" id="title">Chatbot</h1>
-
-<p align="center"><img src="" alt="project-image"></p>
+<h1 align="center" id="title">Sun Sun Chatbot - Question Answering System</h1>
 
 <h2>Project Description</h2>
 
-<p id="description" align="center">This project
+<p id="description">This project
 AI R&amp;D Challenge for Sun* Summer Internship</p>
 
 <h2>🚀 Demo</h2>
 
-[ádfasfas](ádfasfas)
+[link](https://drive.google.com/drive/folders/1Qus_YRHCnSC4V7tTHsTo2bLRvvLtI9mg?usp=sharing)
 
 <h2>🖼️ Project Screenshots:</h2>
 
-<img src="à" alt="project-screenshot" width="sdf" height="sdf/">
+<img src="img\whoru.png" alt="project-screenshot" width="sdf" height="sdf/">
+<img src="img\file_upload.png" alt="project-screenshot" width="sdf" height="sdf/">
 
-  
   
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
 
 *   Chatting with Chatbot to help you address your problems.
-*   You can add data with doc, docx, pdf format to enhance your database and improve the quality of the answer which based on RAG architecture.
+*   You can add data with doc, docx(error), pdf format to enhance your database and improve the quality of the answer which based on RAG architecture.
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -49,7 +47,7 @@ Technologies used in the project:
     * Streamlit
 * <b>Backend: </b>
     *   Langchain
-    *   Zenguard for Prompt Injection Preserving
+    *   Zenguard for Prompt Injection Preserving (Not done)
     *   FastAPI
 * <b>Vector database: </b>
     *   ChromaDB      
@@ -57,25 +55,48 @@ Technologies used in the project:
     *   OpenAI API Key
     *   Advanced RAG ReAct Agent
     *   Hybrid Search
-    *   Agent External Tools: BingSearch Tool, Brainstorming Tool.
+    *   Agent External Tool: BingSearch Tool.
     *   Semantic Chunking
     *   Contextual Compression
-    *   ReRanker
+    *   ReRanker (Demo Colab)
 
-<h2>📁 Pipeline </h2>
+<h2>🔗 Pipeline </h2>
+
+<img src="img\QA_pipeline.png" alt="project-screenshot" width="sdf" height="sdf/">
+<img src="img\agent.png" alt="project-screenshot" width="sdf" height="sdf/">
 
 
 <h2>📁 Project Structure</h2>
+
+    * Tools:
+        * AgentTools
+            - BingSearch.py | Bing Search Tools
+            - RAG.py | RAG Tools
+            - Tools.py | Various Tools Powered By Agent
+        * Retrieval:
+            - Model.py | Model For Retrieval
+            - Retrieval.py | Retrieval Tools
+        * VectorDatabase:
+            - API.py | API For Vector Database
+            - Chroma.py | Vector Database Tools
+    * Config_Model.yaml
+    * Config.py
+    * RunBackend.py
+    * requirements.txt
+    * frontend:
+        * app.py: Streamlit Server
+        * client.py
 
 <h2>👨🏻‍💻 How to run this project</h2>
 
 <b>1. Clone this project from GitHub </b>
 ```
-git clone ...
+git clone https://github.com/ngoctuannguyen/SunSunChatBot.git
 ```
 <b>2. Run Backend Server </b>
 ```
-python API.py
+python RunBackend.py (Question Answering Server)
+python Tools\VectorDatabase\API.py (File Upload Server)
 ```
 <b>3. Run Frontend Server </b>
 ```
@@ -83,6 +104,8 @@ cd /frontend
 streamlit run frontend/app.py
 ``` 
 <h2>👨🏻 How to use this project </h2>
+ 
+ Try some questions in <b>test.txt</b> or your own questions
 
 <h2>📩 Contact </h2>
 If you have questions, please issue this repository or contact me via email ngoctuannguyen198012@gmail.com.
