@@ -1,7 +1,7 @@
 import requests
 from streamlit.runtime.uploaded_file_manager import UploadedFile
 
-SERVER_URL = "http://127.0.0.1:11101"
+SERVER_URL = "http://127.0.0.1:7077"
 SERVER_URL_API = "http://127.0.0.1:11100"
 
 

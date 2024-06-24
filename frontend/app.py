@@ -19,6 +19,7 @@ def getresponse(prompt: str):
                              json={"question": prompt},
                              stream=True)
     return response.json()["text"]["output"]
+    # response.json()["text"] # for Classical RAG
 
 def uploadfile():
     uploaded_file = st.file_uploader("Bạn muốn hiểu tài liệu tốt hơn, hãy đẩy vào đây nha 😊")
